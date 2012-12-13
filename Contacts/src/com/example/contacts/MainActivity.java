@@ -9,6 +9,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         
         super.onCreate(savedInstanceState);
+        
+        // set layout
         setContentView(R.layout.main);
     }
 
