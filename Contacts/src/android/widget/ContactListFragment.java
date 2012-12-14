@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
+import android.util.Log;
 import android.widget.SimpleCursorAdapter;
 
 import com.example.contacts.R;
@@ -26,6 +27,8 @@ public class ContactListFragment extends ListFragment
         setEmptyText("Woot? Nothing?");
         
         //setHasOptionsMenu(true);
+        
+        Log.d("ContactListFragment", "onActivityCreated ContactListFragment");
         
         mAdapter = new SimpleCursorAdapter(getActivity(), 
                 R.layout.list_item, null, 
