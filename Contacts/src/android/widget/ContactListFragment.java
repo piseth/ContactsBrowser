@@ -28,6 +28,8 @@ public class ContactListFragment extends ListFragment
         
         //setHasOptionsMenu(true);
         
+        Log.d("ContactListFragment", "onActivityCreated ContactListFragment");
+        
         mAdapter = new SimpleCursorAdapter(getActivity(), 
                 R.layout.list_item, null, 
                 new String[] { "from" }, 
