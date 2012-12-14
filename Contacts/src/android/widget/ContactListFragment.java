@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
+import android.util.Log;
 import android.widget.SimpleCursorAdapter;
 
 import com.example.contacts.R;
@@ -52,6 +53,8 @@ public class ContactListFragment extends ListFragment
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+
+        Log.d("ContactListFragment", "onLoadFinished");
 
         mAdapter.swapCursor(data);
 
