@@ -46,6 +46,8 @@ public class ContactListFragment extends ListFragment
     @Override
     public Loader<Cursor> onCreateLoader(int arg0, Bundle arg1) {
 
+        Log.d("ContactListFragment", "onCreateLoader ContactListFragment");
+        
         return new CursorLoader(getActivity(), 
                 Contacts.CONTENT_URI,
                 new String[] { ContactsContract.Contacts.DISPLAY_NAME },
