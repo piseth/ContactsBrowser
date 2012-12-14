@@ -9,10 +9,8 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
 import android.util.Log;
-import android.widget.SimpleCursorAdapter;
 
 import com.example.contacts.R;
-import com.example.contacts.R.layout;
 
 public class ContactListFragment extends ListFragment 
     implements LoaderManager.LoaderCallbacks<Cursor> {
